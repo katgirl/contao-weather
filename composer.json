@@ -1,34 +1,51 @@
 {
-    "name": "contao-legacy/wetter",
-    "type": "legacy-contao-module",
-    "description": "Wetteranzeige für die Homepage mit bis zu 4 Tage Vorhersage",
-    "keywords": [
-        "wetter",
-        "weather",
-        "google weather",
-        "yahoo weather",
-        "yahooweather"
-    ],
-    "homepage": "http://www.fruitmedia.de",
-    "version": "1.2.0.9018",
-    "time": "2012-12-03T23:00:00+00:00",
-    "license": [
-        "LGPL"
-    ],
-    "authors": [
-        {
-            "name": "fruitMEDIA Internetagentur",
-            "homepage": "http://www.fruitmedia.de",
-            "role": "lead"
-        }
-    ],
-    "dist": {
-        "type": "zip",
-        "url": "http://legacy-packages-via.contao-community-alliance.org/er2-proxy/wetter/10020009/18",
-        "reference": "1.2.0.9018"
+  "name": "fruitmedia/wetter",
+  "type": "contao-module",
+  "description": "Wetteranzeige für die Homepage mit bis zu 4 Tage Vorhersage",
+  "keywords": [
+    "wetter",
+    "weather",
+    "google weather",
+    "yahoo weather",
+    "yahooweather"
+  ],
+  "homepage": "http://www.fruitmedia.de",
+  "version": "1.2.1",
+  "time": "2014-06-21T20:00:00+00:00",
+  "license": [
+      "LGPL"
+  ],
+  "authors": [
+    {
+      "name": "fruitMEDIA Internetagentur",
+      "homepage": "http://www.fruitmedia.de",
+      "role": "lead"
     },
-    "require": {
-        "contao/core": ">=2.11.0,<4.0.0-dev",
-        "contao-community-alliance/composer-installer": "*"
+    {
+      "name":"Kirsten Roschanski",
+      "email":"kontakt@kirsten-roschanski.de",
+      "homepage":"http://kirsten-roschanski.de",
+      "role":"Developer"
     }
+  ],
+  "require":{
+    "php":">=5.3",
+    "contao/core":">=3,<4"
+  },
+  "replace":{
+    "contao-legacy/weather": "*"
+  },
+  "autoload": {
+    "classmap": ["TL_ROOT/system/modules/weather/"]
+  },
+  "extra":{
+    "contao": {
+      "sources":{
+        "src": "system/modules/weather"
+      }
+    },
+    "master": {
+      "master": "1.2.1"
+    }
+  }
 }
