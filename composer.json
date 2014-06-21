@@ -1,0 +1,34 @@
+{
+    "name": "contao-legacy/wetter",
+    "type": "legacy-contao-module",
+    "description": "Wetteranzeige für die Homepage mit bis zu 4 Tage Vorhersage",
+    "keywords": [
+        "wetter",
+        "weather",
+        "google weather",
+        "yahoo weather",
+        "yahooweather"
+    ],
+    "homepage": "http://www.fruitmedia.de",
+    "version": "1.2.0.9018",
+    "time": "2012-12-03T23:00:00+00:00",
+    "license": [
+        "LGPL"
+    ],
+    "authors": [
+        {
+            "name": "fruitMEDIA Internetagentur",
+            "homepage": "http://www.fruitmedia.de",
+            "role": "lead"
+        }
+    ],
+    "dist": {
+        "type": "zip",
+        "url": "http://legacy-packages-via.contao-community-alliance.org/er2-proxy/wetter/10020009/18",
+        "reference": "1.2.0.9018"
+    },
+    "require": {
+        "contao/core": ">=2.11.0,<4.0.0-dev",
+        "contao-community-alliance/composer-installer": "*"
+    }
+}

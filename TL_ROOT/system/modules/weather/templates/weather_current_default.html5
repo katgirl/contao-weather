@@ -1,0 +1,88 @@
+<!-- indexer::stop -->
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+    <?php if ($this->headline): ?>
+        <<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+    <?php endif; ?>
+    
+    <?php if($this->no_weather): ?>
+        
+        <div class="weather_no_data"></div>
+        
+    <?php else: ?>
+		<div class="weather_current">
+
+        <?php if($this->location): ?>
+            <div class="weather_location">
+                <?php print $this->location; ?>
+            </div>
+        <?php endif; ?>
+        
+        <?php if($this->day): ?>
+            <div class="weather_day"><?php print $this->day; ?></div>
+        <?php endif; ?>
+        
+        <?php if($this->dateString): ?>
+            <div class="weather_date"><?php print $this->dateString; ?></div>
+        <?php endif; ?>
+
+        <?php if($this->image): ?>
+            <div class="weather_image">
+                <?php print $this->image; ?>
+            </div>
+        <?php endif; ?>
+        
+        <?php if($this->condition): ?>
+            <div class="weather_condition"><?php print $this->condition; ?></div>
+        <?php endif; ?>
+        
+        <?php if($this->temperature): ?>
+            <div class="weather_temperature">
+                <span class="weather_label"><?php print $this->label_temperature; ?></span>
+                <?php print $this->temperature; ?> <?php print $this->temperature_sign; ?>
+            </div>
+            <?php if($this->feelslike): ?>
+                <div class="weather_feelslike">
+                    <span class="weather_label"><?php print $this->label_feelslike; ?></span>
+                    <?php print $this->feelslike; ?> <?php print $this->temperature_sign; ?></div>
+            <?php endif; ?>
+        <?php endif; ?>
+        
+        <?php if($this->humidity): ?>
+            <div class="weather_humidity">
+                <span class="weather_label"><?php print $this->label_humidity; ?></span>
+                <?php print $this->humidity; ?>%</div>
+        <?php endif; ?>
+        
+        <?php if($this->precip): ?>
+            <div class="weather_precip">
+                <span class="weather_label"><?php print $this->label_precip; ?></span>
+                <?php print $this->precip; ?>%
+            </div>
+        <?php endif; ?>
+    
+        <?php if($this->windspeed): ?>
+            <div class="weather_windspeed">
+                <span class="weather_label"><?php print $this->label_windspeed; ?></span>
+                <?php print $this->windspeed; ?>
+            </div>
+        <?php endif; ?>
+		
+		</div>
+        
+        <?php if($this->forecast): ?>
+            <div class="weather_forecasts">
+                <?php print $this->forecast; ?>
+            </div>
+        <?php endif; ?>
+        
+        <div class="weather_copyright">
+            <?php print $this->copyright; ?>
+        </div>
+        
+    <?php endif; ?>
+       
+    
+
+	
+</div>
+<!-- indexer::continue -->

@@ -1,0 +1,31 @@
+<div>
+	
+	<div class="weather_current">
+		<h3>Ort suchen</h3>
+		<div class="weather_form">
+			<input type="hidden" name="<?php print $this->strField; ?>[id]" value="<?php print $this->strValue; ?>" id="ctrl_<?php print $this->strField; ?>"/>
+			<input type="hidden" name="<?php print $this->strField; ?>[name]" value="<?php print $this->current_location; ?>" id="ctrl_current_location"/>
+			<input type="text" id="ctrl_weather_search"/>
+			<input type="button"value="Suchen<?php print $this->weather_search_button; ?>" id="btn_weather_search"/>
+		</div>
+		<div class="weather_list" id="weather_list">
+			
+		</div>
+		
+	</div>
+	
+	<div class="weather_search">
+		<h3>Ausgewählter Ort</h3>
+		<div id="weather_current_title"><?php print $this->current_location; ?></div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+	var weather_<?php print $this->id; ?>;
+	var REQUEST_TOKEN = '<?php print REQUEST_TOKEN; ?>';
+	window.addEvent('domready', function() {
+		weather_<?php print $this->id; ?> = new clsWeather($('ctrl_weather_search'), $('btn_weather_search'), $('weather_list'), $('ctrl_<?php print $this->strField; ?>'));
+		
+	});
+</script>

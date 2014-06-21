@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE contaopackage>
+<extension name="wetter" date="20131112">
+    <author user="fruitmedia" name="Axel Schaak" website="http://www.fruitmedia.de" />
+    <copyright>&amp;copy; 2012 by fruitMEDIA Internetagentur</copyright>
+    <license>LGPL</license>
+    <classification type="free" category="application" />
+    <release version="10020009" build="18" date="20121204" />
+    <contao minversion="20110009" maxversion="30010059" />
+    <language code="de">
+        <translator user="fruitmedia" name="Axel Schaak" website="http://www.fruitmedia.de" />
+        <searchtags>wetter,weather,google weather,yahoo weather,yahooweather</searchtags>
+        <title>Contao Wetter</title>
+        <teaser>Wetteranzeige für die Homepage mit bis zu 4 Tage Vorhersage</teaser>
+        <description>&lt;p&gt;Die Erweiterung bietet die M&amp;ouml;glichkeit aktuelle MSN-Wetterdaten auf der eigenen Hompage darzustellen. Die anzuzeigenden Werte k&amp;ouml;nnen im Backend ausgew&amp;auml;hlt werden. Als Wettericons k&amp;ouml;nnen die MSN-Wettericons in klein oder gro&amp;szlig; verwendet werden - aber auch eigene Icons sind m&amp;ouml;glich.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Die Features im &amp;Uuml;berblick:&lt;/strong&gt;&lt;br /&gt;&amp;bull; Definition des Ortes direkt im Backend&lt;br /&gt;&amp;bull; Anzeige der Wettervorhersage f&amp;uuml;r bis zu 4 Tage&lt;br /&gt;&amp;bull; Sprache bei der Anzeige ausw&amp;auml;hlbar&lt;br /&gt;&amp;bull; Cachefunktion&lt;br /&gt;&amp;bull; optional Ort anzeigen&lt;br /&gt;&amp;bull; optional Datum anzeigen&lt;br /&gt;&amp;bull; optional Wetterlage anzeigen&lt;br /&gt;&amp;bull; optional Temperatur anzeigen&lt;br /&gt;&amp;bull; optional gef&amp;uuml;hlte Temperatur anzeigen&lt;br /&gt;&amp;bull; Temperatur in &amp;deg;C oder Fahrenheit anzeigbar&lt;br /&gt;&amp;bull; optional Luftfeuchtigkeit anzeigen&lt;br /&gt;&amp;bull; optional Niederschlag anzeigen&lt;br /&gt;&amp;bull; optional Windgeschwindigkeit anzeigen&lt;br /&gt;&amp;bull; optional Wettergrafik in klein oder gro&amp;szlig; anzeigen&lt;br /&gt;&amp;bull; eigene Wettergrafiken f&amp;uuml;r aktuelles Wetter verwendbar&lt;br /&gt;&amp;bull; eigene Wettergrafiken f&amp;uuml;r Vorhersage verwendbar&lt;br /&gt;&amp;bull; Labels anpassbar&lt;br /&gt;&amp;bull; Darstellung per CSS definierbar&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Die Installation des Wettermoduls ist einfach und kostenlos!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Zur Installation der Erweiterung gehen Sie bitte im Backend von Contao auf die Erweiterungsverwaltung. Klicken Sie dort oben rechts auf &quot;Erweiterung installieren&quot; und tragen in das Feld &lt;strong&gt;wetter&lt;/strong&gt; ein. Folgen Sie dann den weiteren Installationsschritten, bis die Installation beendet ist.&lt;/p&gt;
+&lt;p&gt;Nach der erfolgreichen Installation erstellen Sie ein neues Modul mit dem Modultyp &quot;Wetter&quot;. Nehmen Sie jetzt die gew&amp;uuml;nschten Einstellungen f&amp;uuml;r die Darstellung des aktuellen Wetters und der Vorhersage vor.&lt;/p&gt;
+&lt;p&gt;Das Modul kann dann als Inhaltselement auf einer Seite oder direkt im Seitenlayout eingebunden werden.&lt;br /&gt;Optische Anpassungen sind per CSS und durch Ver&amp;auml;nderung des Templates m&amp;ouml;glich.&lt;/p&gt;</description>
+        <releasenotes>&lt;p&gt;&lt;strong&gt;Changelog 1.2.0&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;bull; Kompatibel zu Contao 3.0&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</releasenotes>
+        <manual link="http://www.contao-wetter.de" />
+        <forum link="http://www.contao-community.de/showthread.php?34022" />
+    </language>
+</extension>

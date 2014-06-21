@@ -1,0 +1,22 @@
+.weather_current {
+	float: left;
+	width: 50%;
+}
+
+.weather_search {
+	float: left;
+	width: 50%;
+}
+
+.weather_error {
+	font-weight: bold;
+	color: #F00;
+}
+
+.weather_search_results li {
+	cursor: pointer;
+}
+
+.weather_search_results li:hover {
+	color: #8AB858;
+}

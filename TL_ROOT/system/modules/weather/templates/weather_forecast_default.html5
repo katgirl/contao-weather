@@ -1,0 +1,40 @@
+<div class="weather_forecast">
+    <?php if($this->image): ?>
+        <div class="weather_forecast_image"><?php print $this->image; ?></div>
+    <?php endif; ?>
+    
+    <?php if($this->day): ?>
+        <div class="weather_forecast_day"><?php print $this->day; ?></div>
+    <?php endif; ?>
+    
+    <?php if($this->dateString): ?>
+        <div class="weather_forecast_date"><?php print $this->dateString; ?></div>
+    <?php endif; ?>
+    
+    <?php if($this->condition): ?>
+        <div class="weather_forecast_condition"><?php print $this->condition; ?></div>
+    <?php endif; ?>
+    
+    <?php if($this->low): ?>
+        <div class="weather_forecast_low">
+             <span class="weather_label"><?php print $this->label_low; ?></span>
+             <?php print $this->low; ?>
+        </div>
+    <?php endif; ?>
+    
+    <?php if($this->high): ?>
+        <div class="weather_forecast_high">
+            <span class="weather_label"><?php print $this->label_high; ?></span>
+            <?php print $this->high; ?>
+        </div>
+    <?php endif; ?>
+    
+    <?php if($this->precip): ?>
+        <div class="weather_forecast_precip">
+            <span class="weather_label"><?php print $this->label_precip; ?></span>
+            <?php print $this->precip; ?>
+        </div>
+    <?php endif; ?>
+    
+    
+</div>
